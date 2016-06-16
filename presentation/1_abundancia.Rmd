@@ -1,23 +1,59 @@
 ---
 title       : "Abundancia"
 subtitle    : "Entendiendo la historia"
-author      : "Diego J. Lizcano"
+author      : Diego J. Lizcano, ULEAM
 job         : "ULEAM"
-date        : "June 15, 2016"
-twitter     : '@dlizcano'
+logo        : img/TSG.png
+biglogo     : img/tsg_logo.gif
 
-output: ioslides_presentation
+date        : June 15, 2016 @ WCS, Quito
+
+output      : ioslides_presentation
+
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+## About me
 
-## R Markdown
+<img src="img/me.jpg" align="right" />
 
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+> - http://dlizcano.github.io
+> - De: Cucuta, Colombia
+> - Biólogo (Uniandes, Bogotá)
+> - DICE, University of Kent 
+> - Actualmente en: ULEAM, Manta
+> - [Fauna de manabi](https://faunamanabi.github.io)
+> - [TEAM Network](http://www.teamnetwork.org/user/1082)
+> - [IUCN/SSC Tapir Specialist Group](http://www.tapirs.org/committees/index.html)
+> - Mountain Tapir 
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+# La Ecología: Estudio de las interacciones que determinan la distribución y abundancia {.build}
+
+
+## Contar Animales
+![Obtener densidad](img/pinguinos.jpg)
+Facil para animales que conspicuos que se agrupan.
+
+
+## Contar Animales
+![Obtener densidad](img/432.jpg)
+, No tan facil si no se agrupan. Metodos de Captura - Marca - Recaptura. Distance
+
+
+## Contar Animales
+![Obtener densidad](img/Moose-capture_011.jpg)
+, Para algunas especies es engorroso, poco practico y muy costoso
+
+
+## another
+
+Slide With text and Image Below
+===
+![alt text](img/Biodiversity.png)
+
+
+
+
 
 ## Slide with Bullets
 
