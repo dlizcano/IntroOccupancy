@@ -35,13 +35,21 @@ digraph DAG {
         rel = yields]
 
   # Node statements
-  occu; conteo; ocupacion; pcount; muestreo; pcountOpen; colext
+  occu;  pcount; pcountOpen; colext
+  
+#another node
+  node [shape = diamond
+        ] // sets as circles
 
+# Node statements
+  muestreo; ocupacion; conteo 
 
   # Edge statements
-   ocupacion->occu; ocupacion->colext; muestreo->conteo; muestreo->ocupacion; conteo->pcountOpen; conteo->pcount
+   ocupacion-> occu; ocupacion->colext; muestreo->conteo; muestreo->ocupacion; conteo->pcountOpen; conteo->pcount
 }
 ")
+
+
 ```
 
 
