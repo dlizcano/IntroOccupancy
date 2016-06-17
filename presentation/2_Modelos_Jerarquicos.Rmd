@@ -12,41 +12,20 @@ output      : ioslides_presentation
 ---
 
 
-## Árbol de decisión de modelos en el paquete unmarked
+## Árbol basico de decisión de modelos en el paquete unmarked
 
 ```{r diagram,echo=FALSE}
 library(DiagrammeR)
 
-grViz("
-digraph DAG {
-
-  # Intialization of graph attributes
-  graph [overlap = true]
-
-  # Initialization of node attributes
-  node [shape = box,
-        fontname = Helvetica,
-        color = blue,
-        type = box
-        ]
-
-  # Initialization of edge attributes
-  edge [color = green,
-        rel = yields]
-
-  # Node statements
-  occu;  pcount; pcountOpen; colext
-  
-#another node
-  node [shape = diamond
-        ] // sets as circles
-
-# Node statements
-  muestreo; ocupacion; conteo 
-
-  # Edge statements
-   ocupacion-> occu; ocupacion->colext; muestreo->conteo; muestreo->ocupacion; conteo->pcountOpen; conteo->pcount
-}
+mermaid("
+graph TB 
+B{Tipo de muestreo} 
+B-->C{Presencia}
+B-->D{Conteo}
+C-->E[occu]
+C-->F[colext]
+D-->G[pcount]
+D-->H[pcountOpen]
 ")
 
 
@@ -59,10 +38,14 @@ digraph DAG {
 - Bullet 2
 - Bullet 3
 
-## Slide with R Output
+## Slide with mermaid
 
-```{r cars, echo = TRUE}
-summary(cars)
+```{r mermaid, echo = FALSE}
+
+library(DiagrammeR)
+
+
+
 ```
 
 ## Slide with Plot
